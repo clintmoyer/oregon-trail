@@ -1,3 +1,16 @@
+/'
+
+FreeBASIC port of Oregon Trail
+------------------------------
+
+The program that follows is a reconstruction
+of the Oregon Trail game written for HP time-shared
+BASIC by Don Rawitsch and Bill Heinemann and Paul Dillenberger
+in 1971. Its source is an updated version published in the
+July-August 1978 issue of Creative Computing.
+
+'/
+
 Dan Rawitsch
 
 Trail
