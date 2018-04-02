@@ -8,1779 +8,222 @@
 ' July-August 1978 issue of Creative Computing.
 '
 
-Dan Rawitsch
-
-Trail
-
-from
-
-This program simulates a trip over the
-Oregon
-Independence,
-Missouri to Oregon City, Oregon in
-1847. Your family of five will cover the
-2040-mile Oregon Trail in 5-6 months
-— if you make it alive.
-
-INTRODUCTION
-
-"The Santa Fe Trail being first
-established, a signboard was later
-set up to show where the Oregon
-Trail branched off.
-It bore the
-simple legend 'Road To Oregon.'
-. Surely so unostentatious a sign
-an-
-
-never
-since
-nounced so long a journey."
-
-before
-
-nor
-
-.
-
-.
-
-- H.M. Chittenden
-
-The American Fur Trade of
-the Far West
-
-During the thirty-year period from 1840
-to 1 870, thousands of pioneers traveled
-over the 2000-mile Oregon Trail tc
-settle on the West Coast. The history of
-the trail may be seen by some as a
-strong example of heroic American
-themes such as "conquering the fron-
-tier" and "the pioneer spirit." To others,
-the great western migration carries the
-political overtones of the colonists and
-their descendents forcing out British
-imperialism and clearing away the
-native American Indians in an effort to
-dominate middle North America them-
-selves. At the very least, the journey
-over the trail represents the human
-of many individuals who,
-stories
-oblivious to historical trends, tried to
-survive in life as best they knew how.
-
-FOR
-
-COMPUTER
-
-RATIONALE
-USAGE
-This computer simulation, developed
-initially in 1971 and refined in 1975, is
-an attempt to give students a better
-feeling of what the journey west was
-like for the people who attempted it.
-Like all simulations, OREGON does
-not attempt to replicate exactly a trip
-on a wagon train in the 1840's. But it
-does attempt to present students with
-some of the resources, decisions, and
-events that faced the pioneers of that
-day. Although students can find out
-about the Oregon Trail by reading
-books, visiting museums, watching
-movies, and similar
-the
-simulation allows them to learn from
-actively participating in the simulated
-experiences of people from another
-era.
-
-activities,
-
-at
-
-as
-
-Carleton
-
-students
-
-Background On The OREGON Program
-In 1971, Don Rawitsch and Bill Heinemann were
-participating together in a practice teaching
-College,
-program
-Northfield, Minnesota. Don was teaching a class
-on the history of the American West and provided
-the preliminary information which Bill, a math
-teacher, used to construct the OREGON program.
-The program was first implemented on the
-Minneapolis Schools timesharing system. On the
-completion of the practice teaching program, the
-program was removed from the Minneapolis sys-
-tem and remained only as a curled up listing until
-Don joined the MECC staff in 1974 and loaded it
-onto the MECC system. Don then proceeded to do
-further research on the Oregon Trail and modi-
-fied the program for historical accuracy to pro-
-duce the present version. The program has been
-implemented on Hewlett-Packard, UNIVAC, and
-Control Data systems.
-
-132
-
-CREATIVE COMPUTING
-
-historical
-
-HISTORICAL BACKUP INFOR-
-MATION
-Although
-information
-about the trip to Oregon is not
-extremely plentiful, primary and
-secondary
-sources were used
-whenever possible to make the
-simulation authentic.
-
-• Mileage and route of the Trail
-
-xv,
-
-xiv,
-
-information
-
-Morgan, insert-back cover, "Map
-of T.H. Jefferson - 1849"
-Hancock,
-based on a map of 1846
-Meeker, Ox Team Days, pp. 252-53
-Meeker, Ox Team Days, p. 61 -says
-travelers averaged 15-25 miles per
-day, though they didn't travel every
-In the simulation, players
-day.
-make about 175-200 miles every
-two-week period.
-Ghent, p. 73 - says ox-drawn
-wagons made 2 miles per hour, or
-20 miles on good days and 5-10
-miles on bad days.
-• Costs of resources
-
-(for
-
-the
-
-$200
-
-calico
-
-about
-
-$3.00/barrel,
-
-Meeker, Ox Team Days, p. 13, says
-in 1850's sugar cost 18G/lb., salt
-cost
-cost
-15C/yd.
-Ghent, p. 99, says a team of oxen
-cost
-eight);
-references a guidebook of the time
-which recommends the following
-to be included for each adult:
-150lbs.offlour
-
-25lbs. of bacon
-1 5 lbs. of coffee
-player
-In
-spends $200-$300 on an oxen
-team. Based on the Meeker infor-
-mation, if the average commodity
-cost about 20<P/lb. and the average
-family of five eats as much as four
-adults, a good food stock would
-a
-cost
-reasonable amount to start with in
-the simulation.
-
-25 lbs. of sugar
-
-simulation,
-
-about
-
-$175.
-
-This
-
-the
-
-is
-
-• Frequency of misfortunes oc-
-
-1
-
-a
-
-shows
-
-curring
-frequency
-Table
-analysis of events mentioned in the
-that
-diaries
-traveled the entire length of the
-trail. The probabilities of events
-occurring in the simulation are
-based on this analysis.
-
-people
-
-three
-
-of
-
-• Miscellaneous
-
-Dates and days of the week shown
-are correct for 1847.
-The average trip in the simulation
-takes about 12 two-week turns.
-There were six forts on the trail. In
-the simulation a player gets the
-option to stop at a fort every other
-turn.
-
-Probability curves for being attacked
-by riders and for being in the moun-
-the
-are
-tains
-geographic
-land.
-(Riders attack more frequently on the
-plains.)
-MAY/JUNE 1 978
-
-representative
-features
-
-the
-
-of
-
-of
-
-50X
-
-40X
-
-20X
-
-CO
-
-c
-B
-E
-o
-
-z
-
-CO
-
-8 iw
-CL
-
-MR
-
-701
-
-601
-
-coc
-
-(0
-c
-J
-
-E
-
-'55
-
-501
-
-o
->»^
-5 4°x
-COno
-c
-
-301
-
-201
-
-200
-
-400
-
-600
-
-800
-
-1000
-
-1200
-
-1400
-
-1600
-
-1800
-
-2000
-
-Mileage
-
-Occurrence of "Riders Ahead" as a function of mileage
-
-/
-f
-
-200
-
-400
-
-600
-
-800
-
-1000
-
-1200
-
-1400
-
-1600
-
-1800
-
-2000
-
-Mileage
-
-Occurrence of "Rugged Mountains" as a function of mileage
-
-BIBLIOGRAPHY
-Ghent, William J., The Road to Oregon, Longmans, Green & Co.,
-
-New York, 1929
-
-Hancock, Samuel, Narrative of Samuel Hancock, George H. Harrap & Co.,
-
-Ltd., London, 1927.
-
-Meeker, Ezra, Ox Team Days on the Oregon Trail, pub. by E. Meeker,
-
-New York, 1907.
-
-Morgan, Dale L., Overland in 1846, Talisman Press, Georgetown,
-
-California, 1963.
-
-Extensive additional material; sources, and background are
-contained in the MECC OREGON User Manual by Don Rawitsch.
-Minnesota Educational Computer Consortium, 2520 Broadway Drive,
-Lauderdale, MN 55113.
-
-133
-
-INFORMATION FROM DIARIES OF PEOPLE TRAVELING THE OREGON TRAIL
-
-(Source: Morgan, David L, Overland in 1846, pp. 123-130,150-158,163-188)
-
-Reference
-
-Start Date
-
-End Date
-
-Total
-Weeks
-
-No. of
-Occurrences Frequency of Occurrences
-
-Diary of
-William E.
-Taylor
-
-Diary of
-Nicholas
-Carriger
-
-Diary of
-Virgil
-Pringle
-
-4/20/1846
-
-9/13/1846
-
-21
-
-32
-
-4/27/1846
-
-9/26/1846
-
-22
-
-4/15/1846
-
-11/30/1846
-
-33
-
-30
-
-38
-
-TOTALS: avg. 25
-
-avg. 33
-
-bad weather
-rugged trail
-animals lost
-wagon breakdown
-met friendly
-
-Indians
-
-bad weather
-rugged trail
-animals lost
-wagon breakdown
-bad weather
-illness
-rugged trail
-animals lost
-wagon breakdown
-bad weather
-rugged trail
-animals lost
-wagon breakdown
-met friendly
-
-Table 1
-
-Indians
-
-10
-4
-
-1
-2
-
-5
-
-2
-6
-6
-2
-
-7
-5
-7
-3
-4
-20%
-16%
-10%
-8%
-
-5%
-
-illness
-no water
-injury
-bad river
-thieves
-
-illness
-injury
-thieves
-
-no water
-injury
-bad river
-thieves
-
-illness
-no water
-injury
-bad river
-thieves
-
-4
-3
-
-1
-2
-
-10
-3
-
-1
-
-5
-2
-3
-2
-
-20%
-8%
-5%
-4%
-4%
-
-1 if
-
-Total Up Resources
-
-Stop at
-
-Fort
-
-Continue
-
-,
-
-I
-
-Attacked By
-
-Riders
-
-One of These Misfortunes Occurs:
-
-11
-
-w
-
-broken wagon wheel
-broken arm
-child gets lost
-heavy rains
-fire in wagon
-snakebite
-wild animals attack
-hail storm
-
-ox injured
-ox wanders off
-bad water
-bandits attack
-fog
-wagon swamped in river
-cold weather
-
-T
-
-Illness *
-
-r
-
-Mountains
-
-One of These Misfortunes Occurs:
-
-slowed down
-wagon damaged
-get lost
-
-The
-
-programs.
-
-Department
-
-independent school
-
-Background on MECC
-The Minnesota Educational Computing Con-
-sortium (MECC) was created in 1972 out of con-
-cern by the governor and legislature that educa-
-tional computing needed a central source of
-coordination for planning, and a mechanism to
-insure that all educational institutions in the state
-would have equal opportunity of access to
-computing services for both instructional and
-Consortium's
-administrative
-membership includes the University of Minnesota
-(5 campuses), The Minnesota State University
-System (7 campuses), the Minnesota Community
-College System (18 campuses), the Minnesota
-Department of Education (representing the state's
-436
-districts), and the
-Minnesota
-Administration.
-of
-Minnesota is the only state in the country having a
-central organization for coordinating educational
-computing activities across all levels of education.
-The MECC Instructional Services Division offers a
-variety of services to consortium members. A
-technical staff operates the largest of Minnesota's
-computers dedicated to instructional computing,
-a Control Data CYBER 73 time-sharing system.
-The MECC Timeshare System is currently con-
-figured for 375 user ports and serves about 1100
-in schools and
-interactive terminals located
-colleges across the state. A large multiplexing
-communications network provides the route by
-which MECC users access the Timeshare System,
-whether
-the
-Minneapolis-St. Paul computer center or hun-
-dreds of miles away near the Canadian border.
-The MECC User Services staff of instructional
-coordinators helps user learn to make better use of
-the computer by visiting school and college sites,
-conducting workshops, providing over-the-phone
-consulting service, publishing news letters, and
-producing written documentation for programs in
-the MECC Timeshare System's central library.
-
-are
-
-a
-
-they
-
-few
-
-miles
-
-from
-
-Blizzard
-c
-
-^
-
-134
-
-J
-
-OREGON. Detailed. Model
-
-CREATIVE COMPUTING
-
-Sample Run
-
-THIS PROGRAM SIMULATES A TRIP OVER THE OREGON TRAIL FROM
-INDEPENDENCE, MISSOURI TO OREGON CITY, OREGON IN 1847.
-YOUR FAMILY OF FIVE WILL COVER THE 2040 MILE OREGON TRAIL
-
-IN 5-6 MONTHS — IF YOU MAKE IT ALIVE.
-
-YOU HAD SAVED 1900 TO SPEND FOR THE TRIP, AND YOU'VE JUST
-
-PAID $200 FOR A UAGON.
-
-YOU UILL NEED TO SPEND THE REST OF YOUR MONEY ON THE
-
-F0LL0UIN6 ITEMS
-
-OXEN - YOU CAN SPEND $200-1300 ON YOUR TEAM
-
-THE MORE YOU SPEND, THE FASTER YOU'LL GO
-
-BECAUSE YOU'LL HAVE BETTER ANIMALS
-
-FOOD - THE MORE YOU HAVE, THE LESS CHANCE THERE
-
-IS OF 6ETTING SICK
-
-AMMUNITION - $1 BUYS A BELT OF 50 BULLETS
-
-YOU UILL NEED BULLETS FOR ATTACKS BY ANIMALS
-
-AND BANDITS, AND FOR HUNTIN6 FOOD
-
-HOU MUCH DO YOU UANT TO SPEND ON YOUR OXEN TEAM ? 250
-HOU MUCH DO YOU UANT TO SPEND ON FOOD ? 150
-HOU MUCH DO YOU UANT TO SPEND ON AMMUNITION ? 50
-HOU MUCH DO YOU UANT TO SPEND ON CLOTHING ? 150
-HOU MUCH DO YOU UANT TO SPEND ON MISCELLANEOUS SUPPLIES ? 50
-AFTER ALL YOUR PURCHASES, YOU NOU HAVE
-
-DOLLARS LEFT
-
-50
-
-MONDAY MARCH 2? 1847
-
-TOTAL MILEA6E IS
-FOOD
-150
-
-BULLETS
-
-2500
-
-CL0THIN6
-
-150
-
-MISC. SUPP.
-
-50
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) HUNT, OR (2) CONTINUE
-? 2
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL ? 1
-THERE UAS A FIRE IN YOUR UAGON— FOOD ANO SUPPLIES DAMAGED
-
-(2) MODERATELY
-
-CLOTHING - THIS IS ESPECIALLY IMPORTANT FOR THE COLD
-
-MONDAY APRIL 12 1847
-
-UEATHER YOU UILL ENCOUNTER UHEN CROSSING
-THE MOUNTAINS
-
-MISCELLANEOUS SUPPLIES - THIS INCLUDES MEDICINE AND
-
-OTHER THINGS YOU UILL NEED FOR SICKNESS
-AND EMERGENCY REPAIRS
-
-YOU CAN SPEND ALL YOUR MONEY BEFORE YOU START YOUR TRIP -
-OR YOU CAN SAVE SOME OF YOUR CASH TO SPEND AT FORTS ALONG
-THE UAY UHEN YOU RUN LOU.
-THE FORTS.
-MORE FOOD.
-UHENEVER YOU HAVE TO USE YOUR TRUSTY RIFLE ALONG THE UAY,
-YOU UILL BE TOLD TO TYPE IN A UORD (ONE THAT SOUNDS LIKE A
-THE FASTER YOU TYPE IN THAT UORD AND HIT THE
-GUN SHOT).
-"RETURN" KEY, THE BETTER LUCK YOU'LL HAVE UITH YOUR GUN.
-
-YOU CAN ALSO GO HUNTING ALONG THE UAY TO GET
-
-HOUEVER, ITEMS COST MORE AT
-
-AT EACH TURN, ALL ITEMS ARE SHOUN IN DOLLAR AMOUNTS
-EXCEPT BULLETS
-UHEN ASKED TO ENTER MONEY AMOUNTS, DON'T USE A "$"'.
-
-GOOD LUCK!"
-
-HOU GOOD A SHOT ARE YOU UITH YOUR RIFLE?
-
-(1) ACE MARKSMAN,
-
-(2) GOOD SHOT,
-
-(3) FAIR TO MIDDLIN'
-
-(4) NEED MORE PRACTICE,
-
-<5) SHAKY KNEES
-
-ENTER ONE OF THE ABOVE -- THE BETTER YOU CLAIM YOU ARE, THE
-FASTER YOU'LL HAVE TO BE UITH YOUR GUN TO BE SUCCESSFUL.
-? 4
-
-MAY JUNE 1978
-
-135
-
-TOTAL MILEAGE IS 200
-FOOD
-
-BULLETS
-
-97
-
-2100
-
-CLOTHING
-
-150
-
-MISC. SUPP.
-
-40
-
-CASH
-
-50
-
-DO YOU UANT TO (1) STOP AT THE NEXT FORT, (2) HUNT, OR (3) CONTINUE
-? 3
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL T
-YOU KILLED A POISONOUS SNAKE AFTER IT BIT YOU
-
-(2) MODERATELY
-
-1
-
-MONDAY APRIL 26 1847
-
-TOTAL MILEA6E IS 40?
-FOOD
-
-BULLETS
-
-84
-
-2090
-
-CLOTHING
-
-150
-
-MISC. SUPP.
-
-35
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) HUNT, OR (2) CONTINUE
-? 2
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL ? 2
-UAGON GETS SUAMPED FORDING RIVER— LOSE FOOD AND CLOTHES
-
-(2) MODERATELY
-
-MONDAY MAY 10 1847
-
-TOTAL MILEAGE IS 580
-FOOD
-
-BULLETS
-
-36
-
-2090
-
-CLOTHING
-
-130
-
-MISC. SUPP.
-
-35
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) STOP AT THE NEXT FORT, (2) HUNT, OR (3) CONTINUE
-? 2
-TYPE UHAM
-? UHAM
-
--
-
-RI6HT BETUEEN THE EYES— YOU GOT A BIG ONE!!!!
-FULL BELLIES TONIGHT!
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL ? 3
-UAGON GETS SUAHPED FORDING RIVER— LOSE FOOD AND CLOTHES
-
-(2) MODERATELY
-
-MONDAY HAY 24 1847
-
-TOTAL NILEAGE IS 719
-FOOD
-
-BULLETS
-
-36
-
-2078
-
-CLOTHING
-
-110
-
-HISC. SUPP,
-
-35
-
-CASH
-
-50
-
-DO YOU UANT TO (1) HUNT, OR (2) CONTINUE
-? 1
-TYPE POU
-? POU
-
-RIGHT BETUEEN THE EYES— YOU GOT A BIG ONE!!!!
-FULL BELLIES TONIGHT!
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL * 2
-RIDERS AHEAD.
-TACTICS
-(1) RUN
-? 2
-TYPE BLAH
-9 BLAH
-
-THEY LOOK HOSTILE
-
-(2) NODERATELY
-
-(3) CONTINUE
-
-(2) ATTACK
-
-NICE SHOOTING— YOU DROVE THEN OFF
-
-RIDERS UERE HOST I LE
-HELPFUL INDIANS SHOU YOU UHERE TO FIND HORE FOOD
-
--CHECK FOR LOSSES
-
-(4) CIRCLE UAGONS
-
-HONDAY JUNE 7 1847
-
-TOTAL HILEAGE IS 883
-FOOD
-
-BULLETS
-
-86
-
-1984
-
-CLOTHING
-
-110
-
-HISC. SUPP.
-
-35
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) STOP AT THE NEXT FORT, (2) HUNT, OR (3) CONTINUE
-? 3
-DO YOU UANT TO EAT (1) POORLY
-OR <3) UELL ?
-UAGON GETS SUAHPED FORDING RIVER— LOSE FOOD AND CLOTHES
-RUGGED NOUNTAINS
-THE GOING GETS SLOU
-BLIZZARD IN NOUNTAIN PASS—TIME AND SUPPLIES LOST
-
-(2) NODERATELY
-
-1
-
-MONDAY JUNE 21 1847
-
-TOTAL HILEAGE IS 950
-FOOD
-
-BULLETS
-
-18
-
-1684
-
-CLOTHING
-
-90
-
-HISC. SUPP.
-
-25
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) HUNT, OR (2) CONTINUE
-? 1
-TYPE BLAH
-? BLAH
-
-RI6HT BETUEEN THE EYES— YOU GOT A BIG ONE!!!!
-FULL BELLIES TONIGHT!
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL ? 2
-RIDERS AHEAD.
-TACTICS
-(1) RUN
-? 2
-TYPE BLAH
-? BLAH
-
-THEY LOOK HOSTILE
-
-(2) NODERATELY
-
-(3) CONTINUE
-
-(2) ATTACK
-
-(4) CIRCLE UAGONS
-
-NICE SHOOTING— YOU DROVE THEN OFF
-RIDERS UERE HOSTILE— CHECK FOR LOSSES
-HAIL STORH— SUPPLIES DAHAGED
-RUGGED NOUNTAINS
-THE GOING GETS SLOU
-
-HONDAY JULY 5 1847
-
-TOTAL HILEA6E IS 1004
-FOOD
-
-BULLETS
-
-53
-
-1392
-
-CLOTHING
-
-90
-
-HISC. SUPP.
-
-19
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) STOP AT THE NEXT FORT, (2) HUNT, OR <3> CONTINUE
-? 3
-DO YOU UANT TO EAT <1> POORLY
-OR (3) UELL ? 2
-UILD ANIHALS ATTACK!
-TYPE POU
-? POU
-
-(2) NODERATELY
-
-NICE SHOOTIN' PARDNER— THEY DIDN'T GET HUCH
-HONDAY JULY 19 1847
-
-TOTAL HILEAGE IS 1217
-FOOD
-
-BULLETS
-
-35
-
-1392
-
-CLOTHING
-
-90
-
-HISC. SUPP.
-
-19
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) HUNT, OR <2) CONTINUE
-? 2
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL ? 2
-
-(2) NODERATELY
-
-HONDAY AUGUST 2 1847
-
-TOTAL NILEAGE IS 1429
-FOOD
-
-BULLETS
-
-17
-
-1392
-
-CLOTHING
-
-90'
-
-HISC. SUPP.
-
-19
-
-CASH
-
-50
-
-DO YOU UANT TO (1) STOP AT THE NEXT FORT, (2) HUNT, OR (3) CONTINUE
-? 2
-TYPE BANG
-? BANG
-
-RIGHT BETUEEN THE EYES— YOU GOT A BIG ONE!!!!
-FULL BELLIES TONIGHT!
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL ? 2
-
-(2) NODERATELY
-
-HONDAY AUGUST 16 1847
-
-TOTAL HILEAGE IS 1594
-FOOD
-
-BULLETS
-
-55
-
-1380
-
-CLOTHING
-
-90
-
-HISC. SUPP
-
-19
-
-CASH
-
-50
-
-(2) NODERATELY
-
-DO YOU UANT TO ( 1 ) HUNT, OR (2) CONTINUE
-? 2
-DO YOU UANT TO EAT (1) POORLY
-OR (3) UELL ? 2
-RIDERS AHEAD.
-TACTICS
-(1) RUN
-? 2
-TYPE UHAH
-? UHAH
-
-THEY LOOK HOSTILE
-
-(3) CONTINUE
-
-(2) ATTACK
-
-(4) CIRCLE UAGONS
-
-NICE SHOOTIHG— YOU DROVE THEH OFF
-RIDERS UERE HOSTILE— CHECK FOR LOSSES
-UILD ANIHALS ATTACK!
-TYPE BLAH
-? BLAH
-
-NICE SHOOTIN' PARDNER— THEY DIDH'T GET HUCH
-RUGGED HOUNTAINS
-THE GOING GETS SLOU
-BLIZZARD IN HOUNTAIN PASS— TINE AND SUPPLIES LOST
-
-HONDAY AUGUST 31 1847
-
-YOU'D BETTER DO SOHE HUNTING OR BUY FOOD AND SOON!!!!
-TOTAL NILEAGE IS 1685
-FOOD
-
-CLOTHING
-
-BULLETS
-
-HISC. SUPP.
-
-11
-
-999
-
-89
-
-9
-
-CASH
-
-50
-
-DO YOU UANT TO (1) STOP AT THE NEXT FORT, (2) HUNT, OR (3) CONTINUE
-? 2
-TYPE POU
-? POU
-
-RIGHT BETUEEN THE EYES— YOU GOT A BIG ONE!!!!
-FULL BELLIES TONIGHT!
-DO YOU UANT TO EAT <1) POORLY
-OR <3) UELL ? 2
-
-(2) NODERATELY
-
-HONDAY SEPTEMBER 13 1847
-
-TOTAL NILEAGE IS 1847
-FOOD
-
-BULLETS
-
-48
-
-986
-
-CLOTHING
-
-HISC. SUPP.
-
-89
-
-9
-
-CASH
-
-50
-
-DO YOU UANT TO ( 1 ) HUNT, OR (2) CONTINUE
-? 2
-DO YOU UANT TO EAT <1) POORLY
-OR <3) UELL ?
-
-1
-
-(2) NODERATELY
-
-COLD UEATHER— BRRRRRRR'— YOU HAVE ENOUGH CLOTHING TO KEEP YOU UARH
-
-YOU FINALLY ARRIVED AT OREGON CITY
-AFTER 2040 LONG NILES— HOORAY! !!! !
-A REAL PIONEER!
-
-SATURDAY SEPTENBER
-
-25
-
-1847
-
-FOOD
-
-35
-
-BULLETS
-
-986
-
-CLOTHIHG
-
-HISC. SUPP.
-
-89
-
-9
-
-CASH
-
-50
-
-PRESIDENT JANES K. POLK SENDS YOU HIS
-
-HEARTIEST CONGRATULATIONS
-
-AND UISHES YOU A PROSPEROUS LIFE AHEAD
-
-AT YOUR NEU HOHE
-
-RUN CONPLETE.
-
-136
-
-CREATIVE COMPUTING
-
-SPEND
-
-9 50
-960
-970
-980
-990
-1000
-1010
-1020
-1030
-1040
-1050
-1060
-1070
-1080
-1090
-1100
-1110
-1120
-1 130
-1140
-1150
-1160
-1170
-1180
-1190
-1200
-1210
-1220
-1230
-1240
-1250
-1260
-1270
-1260
-1290
-1300
-1310
-1320
-1330
-1340
-1350
-1360
-1370
-1300
-1390
-1400
-1410
-1420
-1430
-1440
-1450
-1460
-1470
-1480
-1490
-1500
-1510
-1520
-1530
-1540
-1550
-1560
-1570
-1560
-1590
-1600
-1610
-1620
-1630
-1640
-1650
-1660
-1670
-1680
-1690
-1700
-1710
-1720
-1730
-1740
-1750
-1760
-1770
-1780
-1790
-1000
-1010
-1820
-1830
-1640
-1850
-1860
-1870
-1880
-1890
-1900
-1910
-1920
-1930
-1940
-1950
-1960
-1970
-1980
-1990
-2000
-2010
-2020
-2030
-2040
-2050
-2060
-2070
-2080
-2090
-2100
-2110
-2120
-2130
-
-CLOTHING"*"
-
-THEN 1130
-
-THEN 1170
-
-THEN 1030
-
-BUY AGAIN"
-
-IF F >•
-THEN 980
-PRINT "IMPOSSIBLE"
-GOTO 930
-PRINT "HOW MUCH DO
-INPUT B
-IF B *>•
-PRINT "IMPOSSIBLE"
-GOTO 980
-PRINT "HOW MUCH DO YOU WANT
-INPUT C
-IF C » THEN 1080
-PRINT "IMPOSSIBLE"
-GOTO 1030
-PRINT "HOW MUCH DO YOU WANT TO SPEMD ON MISCELLANEOUS SUPPLIES";
-INPUT Ml
-IF MI »•
-PRINT "IMPOSSIBLE"
-GOTO 1080
-T-700-A-F-B-C-M1
-IF T >•
-PRINT "YOU OVERSPENT—YOU ONLY HAD 8700 TO SPEND.
-GOTO 630
-B-50*B
-PRINT "AFTER ALL YOUR PURCHASES* YOU NOV HAVE -JTJ" DOLLARS LEFT"
-PRINT
-PRINT "MONDAY MARCH 29 1847"
-PRINT
-GOTO 1750
-IF M >• 2040 THEN 5430
-REM ••• SETTING DATE***
-D3-D3*l
-PRINT
-PRINT "MONDAY "J
-IF D3>10 THEN 1300
-ON D3 GOTO 1310*1330*1350*1370*1390*1410*1430*1450*1470*1490
-ON D3-10 OOTO 1510*1530*1550*1570*1590*1610*1630*1650*1670*1690
-PRINT "APRIL 12 "J
-G6T0 1720
-PRINT "APRIL 06 "I
-G0T0 1720
-PRINT "MAY 10 "J
-G0T0 1720
-PRINT "MAY 04 m t
-OOTO 1720
-PRINT "JUNE 7 "1
-GOTO 1720
-PRINT "JUNE 21 "1
-GOTO 1720
-PRINT "JULY 5 "J
-GOTO 1720
-PRINT "JULY 19 "*
-G0T0 1720
-PRINT "AUGUST 2 "J
-G0T0 1720
-PRINT "AUGUST 16 "1
-G0T0 1720
-PRINT "AUGUST 31 "I
-GOTO 1720
-PRINT "SEPTEMBER 13 "J
-G0T0 1720
-PRINT "SEPTEMBER 27 "J
-GOTO 1720
-PRINT "OCTOBER 11 "J
-G0T0 1720
-PRINT "OCTOBER 25 "1
-G0T0 1720
-PRINT "NOVEMBER 8 "i
-GOTO 1720
-PRINT "NOVEMBER 22 »l
-GOTO 1720
-PRINT "DECEMBER 6 "J
-OOTO 1720
-PRINT "DECEMBER 20 "J
-GOTO 1720
-PRINT "YOU HAVE BEEN ON THE TRAIL T00 LONG —
-PRINT "YOUR
-GOTO 5170
-PRINT "1047"
-PRINT
-REM •••BEGINNING EACH
-IF F »-
-F»0
-IF B >•
-B-0
-IF C >-
-C»0
-IF Ml »-
-MI-0
-IF F »• 13 THEN 1050
-PRINT "YOU'D BETTER DO
-F-INTCF)
-B-INT(B)
-C«INT<C>
-Hl-INT(MI)
-T»INT<T)
-M-INT(M)
-M2-M
-IF S4-1 THEN 1950
-IF K8-1 THEN 1950
-B0T0 199
-T-T-20
-IF T<0 THEN 5080
-PRINT "DOCTOR'S BILL IS
-LET K8-S4-0
-IF M9>! THEN 2020
-PRINT "TOTAL MILEAGE 1S"JM
-GOTfl 2040
-PRINT "TOTAL MILEAGE IS 950"
-M9-0
-PRINT "FOOD"* "BULLETS"* "CLOTHING"* "Ml SC
-PRINT F*B*C*H1*T
-IF Xl—I THEN 2170
-X1-X1»(-1)
-PRINT "DO YOU WANT TO < 1 > STOP AT THE NEXT
-PRINT "OR (3> CONTINUE"
-INPUT X
-IF X>2 THEN 2150
-IF X<1 THEN 2150
-LET X-INT(X)
-
-FAMILY DIES IN THE FIRST BLIZZARD OF WINTER"
-
-SOME HUNTING OR BUY FOOD AND SOON I 111"
-
-FORT* (2) HUNT* "I
-
-THEN 1810
-
-THEN 1790
-
-THEN 1830
-
-THEN 1770
-
-TURN***
-
-'CASH-
-
-SUPP.
-
-820'
-
-"
-
-"
-
-Program Listing
-
-BASIC 3*1
-
-MINNES0TA EDUCATIONAL COMPUTING CONSORTIUM STAFF
-
-REM DOCUMENTATION BOOKLET *0REQJN * AVAILABLE FROM
-
-MECC SUPPORT SERVICES
-2520 BROADWAY DRIVE
-55113
-ST. PAUL* MM
-
-VERSION 1 01/01/78
-10 REM PROGRAM NAME - 0REGBN
-20 REM ORIGINAL PROGRAMMING BY BILL HEINEMANN - 1071
-30 REM SUPP0RT RESEARCH AND MATERIALS BY DON RAVITSCH*
-40 REM
-SO REM CDC CYBER 70/73-26
-•
-61 REM
-68 REM
-63 REM
-REM
-6
-150 REM «F0R THE MEANING OF THE VARIABLES USED* LIST LINES 6470-6790*
+' START PAGE 1
+
+10 REM PROGRAM NAME - 0REGON        VERSION:01/01/78
+20 REM ORIGINAL PROGRAMMING BY BILL HEINEMANN - 1971
+30 REM SUPP0RT RESEARCH AND MATERIALS BY DON RAVITSCH
+40 REM MINNES0TA EDUCATIONAL COMPUTING CONSORTIUM STAFF
+5O REM CDC CYBER 70/73-26 BASIC 3-1
+60 REM DOCUMENTATION BOOKLET *0REQJN * AVAILABLE FROM
+61 REM    MECC SUPPORT SERVICES
+62 REM    2520 BROADWAY DRIVE
+63 REM    ST. PAUL, MN  55113
+80 REM
+150 REM  =F0R THE MEANING OF THE VARIABLES USED, LIST LINES 6470-6790=
 155 REM
-160 PRINT -DO YOU NEED INSTRUCTIONS
-170 DIM CS(5>
+160 PRINT "DO YOU NEED INSTRUCTIONS  (CYES/NO)";
+170 DIM C5(5)
 180 REM RANDOMIZE REMOVED
 190 INPUT CS
-200 IF C$""W" THEN 690
+200 IF CS="N0" THEN 690
 210 PRINT
 220 PRINT
 230 REM •••INSTRUCTIONS***
 240 PRINT "THIS PROGRAM SIMULATES A TRIP OVER THE OREGON TRAIL FROM"
-250 PRINT "INDEPENDENCE* MISSOURI TO OREGON CITY, OREGON IN 1847."
-260 PRINT "YOUR FAMILY OF FIVE BILL COVER THE 2040 NILE OREGON TRAIL"
-
-270 PRINT "IN 5-6 MONTHS — IF YOU MAKE IT ALIVE*"
-
-CYES/NO)"*
-
--
-
-FOLLOWING XTEMSt"
-
-XS OF OETTXNG SICK"
-
-PAID 8200 FOR A WAGON .
-
-AND BANDITS* AND FOR HUNTING FOOD"
-
-BECAUSE YOU'LL HAVE BETTER ANIMALS"
-
-THE MORE YOU SPEND* THE FASTER YOU*LL 00"
-
-AMMUNITION - 81 BUYS A BELT OF 50 BULLETS"
-
-OXEN - YOU CAN SPEND 8200-8300 ON YOUR TEAM"
-
-YOU WILL NEED BULLETS FOR ATTACKS BY ANIMALS"
-
-FOOD - THE MORE YOU HAVE* THE LESS CHANCE THERE"
-
-MISCELLANEOUS SUPPLIES - THIS INCLUDES MEDICINE AND"
-
-CLOTHING - THIS IS ESPECIALLY IMPORTANT FOR THE COLD"
-
-OTHER THINGS YOU WILL NEED FOR SICKNESS"
-AND EMERGENCY REPAIRS"
-
-WEATHER YOU WILL ENCOUNTER WHEN CROSSING"
-THE MOUNTAINS"
-
+250 PRINT "INDEPENDENCE, MISSOURI TO OREGON CITY, OREGON IN 1847."
+260 PRINT "YOUR FAMILY OF FIVE WILL COVER THE 2040 MILE OREGON TRAIL"
+270 PRINT "IN 5-6 MONTHS --- IF YOU MAKE IT ALIVE."
 280 PRINT
-290 PRINT "YOU HAD SAVED 8900 TO SPEND FOR THE TRIP* AND YOU'VE JUST"
-300 PRINT "
+290 PRINT "YOU HAD SAVED $900 TO SPEND FOR THE TRIP, AND YOU'VE JUST"
+300 PRINT "   PAID $200 FOR A WAGON ."
 310 PRINT "YOU WILL NEED TO SPEND THE REST OF YOUR MONEY ON THE"
-320 PRINT "
+320 PRINT "   FOLLOWING ITEMS:"
 330 PRINT
-340 PRINT "
-350 PRINT "
-360 PRINT "
+340 PRINT "     OXEN - YOU CAN SPEND $200-$300 ON YOUR TEAM"
+350 PRINT "            THE MORE YOU SPEND, THE FASTER YOU'LL GO"
+360 PRINT "               BECAUSE YOU'LL HAVE BETTER ANIMALS"
 370 PRINT
-360 PRINT "
-390 PRINT "
+380 PRINT "     FOOD - THE MORE YOU HAVE, THE LESS CHANCE THERE"
+390 PRINT "               IS OF GETTING SICK"
 400 PRINT
-410 PRINT "
-420 PRINT "
-430 PRINT "
+410 PRINT "     AMMUNITION - 81 BUYS A BELT OF 50 BULLETS"
+420 PRINT "            YOU WILL NEED BULLETS FOR ATTACKS BY ANIMALS"
+430 PRINT "               AND BANDITS, AND FOR HUNTING FOOD"
 440 PRINT
-450 PRINT "
-460 PRINT "
-470 PRINT "
-460 PRINT
-490 PRINT "
-500 PRINT "
-510 PRINT "
+450 PRINT "     CLOTHING - THIS IS ESPECIALLY IMPORTANT FOR THE COLD"
+460 PRINT "               WEATHER YOU WILL ENCOUNTER WHEN CROSSING"
+470 PRINT "               THE MOUNTAINS"
+480 PRINT
+490 PRINT "     MISCELLANEOUS SUPPLIES - THIS INCLUDES MEDICINE AND"
+500 PRINT "               OTHER THINGS YOU WILL NEED FOR SICKNESS"
+510 PRINT "               AND EMERGENCY REPAIRS"
 520 PRINT
 530 PRINT
-540 PRINT "YOU CAN SPEND ALL YOUR MONEY BEFORE YOU START YOW-R TRIP -"
-5 50 PRINT "OR YOU CAN SAVE SOME OF YOUR CASH TO SPEND AT FORTS ALONG"
-560 PRINT "THE WAY WHEN Y9U RUN LOW.
-570 PRINT "THE FORTS.
-500 PRINT "MORE FOOD."
-590 PRINT "WHENEVER YOU HAVE TO USE YOUR TRUSTY RIFLE ALONG THE WAY*"
+540 PRINT "YOU CAN SPEND ALL YOUR MONEY BEFORE YOU START YOUR TRIP -"
+550 PRINT "OR YOU CAN SAVE SOME OF YOUR CASH TO SPEND AT FORTS ALONG"
+560 PRINT "THE WAY WHEN YOU RUN LOW. H0WEVER, ITEMS COST MORE AT"
+570 PRINT "THE FORTS. YOU CAN ALSO GO HUNTING ALONG THE WAY TO GET"
+580 PRINT "MORE FOOD."
+590 PRINT "WHENEVER YOU HAVE TO USE YOUR TRUSTY RIFLE ALONG THE WAY,"
 600 PRINT "YOU WILL BE TOLD TO TYPE IN A WORD (ONE THAT SOUNDS LIKE A"
-610 PRINT "GUN SHOT).
-620 PRINT """RETURN"" KEY* THE BETTER LUCK YOU'LL HAVE WITH YOUR GUN."
+610 PRINT "GUN SHOT). THE FASTER YOU TYPE IN THAT WORD AND HIT THE"
+620 PRINT """RETURN"" KEY, THE BETTER LUCK YOU'LL HAVE WITH YOUR GUN."
 630 PRINT
-640 PRINT "AT EACH TURN* ALL ITEMS ARE SHOWN IN DOLLAR AMOUNTS"
+640 PRINT "AT EACH TURN, ALL ITEMS ARE SHOWN IN DOLLAR AMOUNTS"
 650 PRINT "EXCEPT BULLETS"
-660 PRINT "WHEN ASKED TO ENTER MONEY AMOUNTS* DON'T USE A —8""."
+660 PRINT "WHEN ASKED TO ENTER MONEY AMOUNTS, DON'T USE A ""$""."
 670 PRINT
-680 PRINT "GOOD LUCK1U"
+680 PRINT "GOOD LUCK!!!"
 690 PRINT
 700 PRINT
 710 PRINT "HOW GOOD A SHOT ARE YOU WITH YOUR RIFLE?"
-720 PRINT "
-730 PRINT "
-740 PRINT "ENTER ONE OF THE ABOVE -- THE BETTER YOU CLAIM YOU ARE* THE'
-750 PRINT "FASTER YOU'LL HAVE TO BF WITH YOUR GUN TO BE SUCCESSFUL."
+720 PRINT "  (1) ACE MARKSMAN,  (2) GOOD SHOT,  (3) FAIR TO MIDDLIN'"
+730 PRINT "         (4) NEED MORE PRACTICE,  (5) SHAKY KNEES"
+740 PRINT "ENTER ONE OF THE ABOVE -- THE BETTER YOU CLAIM YOU ARE, THE"
+750 PRINT "FASTER YOU'LL HAVE TO BE WITH YOUR GUN TO BE SUCCESSFUL."
 760 INPUT D9
 770 IF D9>5 THEN 790
-760 G0T0 010
-790 D9-0
-
-THE FASTER YOU TYPE IN THAT WORD AND HIT THE"
-
-YOU CAN ALSO GO HUNTING ALONG THE WAY TO GET"
-
-H0WEVER* ITEMS COST MORE AT"
-
-<4> NEED MORE PRACTICE*
-
-(3) FAIR TO MIDDLIN'"
-
-<2> MOD SHOT*
-
-(I) ACE MARKSMAN*
-
-< 5) SHAKY KNEES"
-
-00 REM *** INITIAL PURCHASES***
-
-610 X1--1
-820 K0-S4-F1-F2-H-M9-D3-0
-6 30 PRINT
-040 PRINT
-8 50 PRINT "HOW MUCH DO YOU WANT TO SPEND ON YOUR OXEN TEAM";
-
-60 INPUT A
-
-870 IF A »• 200 THEN 900
+760 G0T0 810
+790 D9=0
+800 REM *** INITIAL PURCHASES***
+810 X1=-1
+820 K8=S4=F1=F2=M=M9=D3=0
+830 PRINT
+840 PRINT
+850 PRINT "HOW MUCH DO YOU WANT TO SPEND ON YOUR OXEN TEAM";
+860 INPUT A
+870 IF A >= 200 THEN 900
 880 PRINT "NOT ENOUGH"
-090 GOTO 650
-900 IF A <- 300 THIN 930
-9 10 PRINT "TOO MUCH"
-920 QOTO 050
-9 30 PRINT "HOW MUCH DO YOU WANT TO SPEND ON FOOD"*
+890 GOTO 850
+900 IF A <= 300 THEN 930
+910 PRINT "TOO MUCH"
+920 GOTO 850
+930 PRINT "HOW MUCH DO YOU WANT TO SPEND ON FOOD";
 940 INPUT F
+950 IF F >= 0 THEN 980
+960 PRINT "IMPOSSIBLE"
+970 GOTO 930
+980 PRINT "HOW MUCH DO YOU WANT TO SPEND ON AMMUNITION";
+990 INPUT B
+1000 IF B >= 0 THEN 1030
+1010 PRINT "IMPOSSIBLE"
+1020 GOTO 980
+1030 PRINT "HOW MUCH DO YOU WANT TO SPEND ON CLOTHING";
+1040 INPUT C
+1050 IF C >= 0 THEN 1080
+1060 PRINT "IMPOSSIBLE"
+1070 GOTO 1030
+1080 PRINT "HOW MUCH DO YOU WANT TO SPEND ON MISCELLANEOUS SUPPLIES";
+1090 INPUT M1
+1100 IF M1 >= 0 THEN 1130
+1110 PRINT "IMPOSSIBLE"
+1120 GOTO 1080
+1130 T=700-A-F-B-C-M1
+1140 IF T >= 0 THEN 1170
+1150 PRINT "YOU OVERSPENT--YOU ONLY HAD $700 TO SPEND.  BUY AGAIN."
+1160 GOTO 830
+1170 B=50*B
+1180 PRINT "AFTER ALL YOUR PURCHASES, YOU NOW HAVE ";T;" DOLLARS LEFT"
+1190 PRINT
+1200 PRINT "MONDAY MARCH 29 1847"
+1210 PRINT
+1220 GOTO 1750
+1230 IF M >= 2040 THEN 5430
+1240 REM ***SETTING DATE***
+1250 D3=D3+1
+1260 PRINT
+1270 PRINT "MONDAY ";
+1280 IF D3>10 THEN 1300
+1290 ON D3 GOTO 1310, 1330, 1350, 1370, 1390, 1410, 1430, 1450, 1470, 1490
+1300 ON D3-10 GOTO 1510, 1530, 1550, 1570, 1590, 1610, 1630, 1650, 1670, 1690
+1310 PRINT "APRIL 12 ";
+1320 GOTO 1720
+1330 PRINT "APRIL 26 ";
+1340 GOTO 1720
+1350 PRINT "MAY 10 ";
+1360 GOTO 1720
+1370 PRINT "MAY 24 ";
+1380 GOTO 1720
+1390 PRINT "JUNE 7 ";
+1400 GOTO 1720
+1410 PRINT "JUNE 21 ";
+1420 GOTO 1720
+1430 PRINT "JULY 5 ";
+1440 GOTO 1720
+1450 PRINT "JULY 19 ";
+1460 GOTO 1720
+1470 PRINT "AUGUST 2 ";
+1480 GOTO 1720
+1490 PRINT "AUGUST 16 ";
+1500 GOTO 1720
+1510 PRINT "AUGUST 31 ";
+1520 GOTO 1720
+1530 PRINT "SEPTEMBER 13 ";
+1540 GOTO 1720
+1550 PRINT "SEPTEMBER 27 ";
+1560 GOTO 1720
+1570 PRINT "OCTOBER 11 ";
+1580 GOTO 1720
+1590 PRINT "OCTOBER 25 ";
+1600 GOTO 1720
+1610 PRINT "NOVEMBER 8 ";
+1620 GOTO 1720
+1630 PRINT "NOVEMBER 22 ";
+1640 GOTO 1720
+1650 PRINT "DECEMBER 6 ";
+1660 GOTO 1720
+1670 PRINT "DECEMBER 20 ";
+1680 GOTO 1720
+1690 PRINT "YOU HAVE BEEN ON THE TRAIL TOO LONG ------"
+1700 PRINT "YOUR FAMILY DIES IN THE FIRST BLIZZARD OF WINTER"
+1710 GOTO 5170
+1720 PRINT "1847"
+1730 PRINT
+1740 REM ***BEGINNING EACH TURN***
+1750 IF F >= 0 THEN 1770
+1760 F=0
+1770 IF B >= 0 THEN 1790
+1780 B=0
+1790 IF C >= 0 THEN 1810
+1800 C=0
+1810 IF M1 >= 0 THEN 1830
+1820 M1=0
+1830 IF F >= 13 THEN 1850
+1840 PRINT "YOU'D BETTER DO SOME HUNTING OR BUY FOOD AND SOON!!!!"
+1850 F=INT(F)
+1860 B=INT(B)
+1870 C=INT(C)
+1880 M1=INT(M1)
+1890 T=INT(T)
+1900 M=INT(M)
+1910 M2=M
+1920 IF S4=1 THEN 1950
+1930 IF K8=1 THEN 1950
+1940 GOTO 1990
+1950 T=T-20
+1960 IF T<0 THEN 5080
+1970 PRINT "DOCTOR'S BILL IS $20"
+1980 LET K8=S4=0
+1990 IF M9=1 THEN 2020
+2000 PRINT "TOTAL MILEAGE IS";M
+2010 GOTO 2040
+2020 PRINT "TOTAL MILEAGE IS 950"
+2030 M9=0
+2040 PRINT "FOOD","BULLETS","CLOTHING","MISC. SUPP.","CASH"
+2050 PRINT F, B, C, M1, T
+2060 IF X1=-1 THEN 2170
+2070 X1=X1*(-1)
+2080 PRINT "DO YOU WANT TO (1) STOP AT THE NEXT FORT, (2) HUNT, ";
+2090 PRINT "OR (3) CONTINUE"
+2100 INPUT X
+2110 IF X>2 THEN 2150
+2120 IF X<1 THEN 2150
+2130 LET X=INT(X)
 
-MAY JUNE 1978
+' START PAGE 2
 
-137
-
-2140
+2140
 2150
 2160
 2170
