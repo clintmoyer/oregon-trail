@@ -6,7 +6,8 @@ Public domain, open-source software. Use this software as you wish.
 History
 -------
 
-* Dan Rawitsch shared the source code to the original Oregon Trail in a
+* [Dan Rawitsch](http://www.omaha.com/columnists/hansen/hansen-hitting-the-oregon-trail-is-still-hot-after-years/article_3c8b4eb7-6299-5466-ad8d-3456ed374a96.html)
+  shared the source code to the original Oregon Trail in a
   [1978 edition](https://ia800307.us.archive.org/3/items/creativecomputing-1978-05/Creative_Computing_v04_n03_1978_May-June.pdf)
   of Creative Computing magazine.
 * Dan Rawitsch was an

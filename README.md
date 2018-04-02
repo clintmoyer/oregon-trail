@@ -3,7 +3,7 @@ Oregon Trail
 
 The original Oregon Trail.
 
-The original was released in 1974 and meant to teach children
+The original was released in 1971 and meant to teach children
 about the realities of settlers crossing the Oregon Trail.
 It was written with HP time-shared BASIC running on an HP 2100
 microcomputer. It was produced by the MECC
@@ -35,6 +35,6 @@ has a fairly good timeline on the progression of the series.
 Classic Phrases
 ---------------
 
-"You have died of dysentry."
+> You have died of dysentry.
 
-"Here lies andy, peperony and chease."
+> Here lies andy, peperony and chease.
