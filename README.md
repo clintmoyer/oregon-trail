@@ -3,6 +3,9 @@ Oregon Trail
 
 The original Oregon Trail.
 
+Bio
+---
+
 The original was released in 1971 and meant to teach children
 about the realities of settlers crossing the Oregon Trail.
 It was written with HP time-shared BASIC running on an HP 2100
