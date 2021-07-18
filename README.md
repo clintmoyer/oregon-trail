@@ -32,7 +32,7 @@ Background On The OREGON Program
 --------------------------------
 
 In 1971, Don Rawitsch and Bill Heinemann were participating together in
-a practice teaching program as students at Careton College, Northfield,
+a practice teaching program as students at [Carleton College](https://www.carleton.edu/), Northfield,
 Minnesota. Don was teaching a class on the history of the American West
 and provided the preliminary information which Bill, a math teacher,
 used to construct the OREGON program. The program was first implemented
