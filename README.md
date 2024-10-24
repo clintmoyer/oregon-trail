@@ -10,13 +10,30 @@ issue of Creative Computing.
 
 ![screenshot](https://i.imgur.com/EW2vHKg.png)
 
+## Versions
+
+We offer three versions of the program:
+- working copy
+- historical original
+- modern refactor
+
+The original DEC BASIC-PLUS syntax was specific to the PDP-11 16-bit minicomputers
+sold by Digital Equipment Corporation. The only breaking change is the symbol used
+for the exponentiation operator.
+
+The working copy is produced by:
+
+```
+sed 's/\*\*/^/g' original/oregon.bas
+```
+
 ## Building
 
 Windows/Linux:
 
 FreeBASIC - https://github.com/freebasic/fbc
 
-```bash
+```
 fbc oregon.bas
 ```
 
@@ -24,7 +41,7 @@ MacOS:
 
 QB64 - https://github.com/QB64Team/qb64
 
-```bash
+```
 qb64 -c oregon.bas
 ```
 
