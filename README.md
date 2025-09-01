@@ -1,8 +1,8 @@
 Oregon Trail
 ============
 
-The original Oregon Trail. Painstakingly copied by hand from the May 1978
-issue of Creative Computing.
+The original Oregon Trail. Painstakingly copied by hand from the [May 1978
+issue of Creative Computing](https://archive.org/details/creativecomputing-1978-05/page/n139/mode/1up).
 
 <img width="400" alt="magazine article title" src="https://github.com/user-attachments/assets/491481ca-03d2-4cef-bf9d-908c6bd038a1"><img width="400" alt="magazine article code" src="https://github.com/user-attachments/assets/fbb6ae7e-adfa-4136-9ed1-11dd98de0f33">
 
