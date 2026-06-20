@@ -21,10 +21,10 @@ Download FreeBASIC: https://github.com/freebasic/fbc
 ### QB64 (macOS/Windows/Linux)
 
 ```bash
-qb64 -c qb4/oregon.bas
+qb64pe -c qb64/oregon.bas
 ```
 
-Download QB64: https://github.com/QB64Team/qb64
+Download QB64-PE: https://github.com/QB64-Phoenix-Edition/QB64pe
 
 ### Original
 
