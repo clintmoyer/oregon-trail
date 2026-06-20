@@ -533,7 +533,7 @@ F = F + 14
 AfterEvents:
 ' ***MOUNTAINS***
 IF M <= 950 THEN GOTO SetDate
-IF RND * 10 * ((9 - ((M / 100 - 15) ^ 2 + 72)) / ((M / 100 - 15) ^ 2 + 12)) > 0 THEN GOTO CheckPasses
+IF RND * 10 > 9 - (((M / 100 - 15) ^ 2 + 72) / ((M / 100 - 15) ^ 2 + 12)) THEN GOTO CheckPasses
 PRINT "RUGGED MOUNTAINS"
 IF RND <= 0.1 THEN
     PRINT "YOU GOT LOST---LOSE VALUABLE TIME TRYING TO FIND TRAIL!"
