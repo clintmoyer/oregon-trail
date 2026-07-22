@@ -1,3 +1,6 @@
+#lang "fblite"
+OPTION GOSUB
+
 ' PROGRAM NAME - OREGON        VERSION:01/01/78
 ' ORIGINAL PROGRAMMING BY BILL HEINEMANN - 1971
 ' SUPPORT RESEARCH AND MATERIALS BY DON RAVITSCH
@@ -10,11 +13,18 @@
 '
 ' CONVERTED TO FREEBASIC - 2025
 '
+' FREEBASIC COMPATIBILITY FIXES (Assisted by Antigravity AI):
+' 1. Enabled '#lang "fblite"' dialect and 'OPTION GOSUB' for GOSUB/RETURN support.
+' 2. Renamed string variable C$ -> C_STR to prevent collision with double variable C (clothing).
+' 3. Renamed string array S$ -> S_STR to avoid type suffix collisions.
+' 4. Renamed label SetDate: -> Set_Date: to avoid conflict with FreeBASIC internal SetDate function.
+' 5. Fixed shooting timer calculation: removed obsolete '* 3600' multiplier since TIMER returns seconds in FreeBASIC.
+'
 ' *FOR THE MEANING OF THE VARIABLES USED, SEE END OF FILE*
 
 ' Variable declarations
-DIM AS STRING C$
-DIM AS STRING S$(1 TO 5)
+DIM AS STRING C_STR
+DIM AS STRING S_STR(1 TO 5)
 DIM AS DOUBLE A, B, B1, B3, C, C1, D, D1, D3, D9
 DIM AS DOUBLE E, F, F1, F2, F9, K8, L1, M, M1, M2, M9
 DIM AS DOUBLE P, R1, S4, S5, S6, T, T1, X, X1
@@ -23,8 +33,8 @@ DIM AS DOUBLE P, R1, S4, S5, S6, T, T1, X, X1
 RANDOMIZE TIMER
 
 PRINT "DO YOU NEED INSTRUCTIONS  (YES/NO)"
-INPUT C$
-IF C$ = "NO" THEN GOTO StartGame
+INPUT C_STR
+IF C_STR = "NO" THEN GOTO StartGame
 
 PRINT
 PRINT
@@ -155,7 +165,7 @@ PRINT
 GOTO BeginTurn
 
 ' ***SETTING DATE***
-SetDate:
+Set_Date:
 IF M >= 2040 THEN GOTO FinalTurn
 D3 = D3 + 1
 PRINT
@@ -532,7 +542,7 @@ F = F + 14
 
 AfterEvents:
 ' ***MOUNTAINS***
-IF M <= 950 THEN GOTO SetDate
+IF M <= 950 THEN GOTO Set_Date
 IF RND * 10 > 9 - (((M / 100 - 15) ^ 2 + 72) / ((M / 100 - 15) ^ 2 + 12)) THEN GOTO CheckPasses
 PRINT "RUGGED MOUNTAINS"
 IF RND <= 0.1 THEN
@@ -561,9 +571,9 @@ F2 = 1
 IF RND < 0.7 THEN GOTO CheckBlizzard
 
 CheckMileage:
-IF M > 950 THEN GOTO SetDate
+IF M > 950 THEN GOTO Set_Date
 M9 = 1
-GOTO SetDate
+GOTO Set_Date
 
 CheckBlizzard:
 PRINT "BLIZZARD IN MOUNTAIN PASS--TIME AND SUPPLIES LOST"
@@ -602,12 +612,12 @@ PRINT "DUE TO YOUR UNFORTUNATE SITUATION, THERE ARE A FEW"
 PRINT "FORMALITIES WE MUST GO THROUGH"
 PRINT
 PRINT "WOULD YOU LIKE A MINISTER?"
-INPUT C$
+INPUT C_STR
 PRINT "WOULD YOU LIKE A FANCY FUNERAL?"
-INPUT C$
+INPUT C_STR
 PRINT "WOULD YOU LIKE US TO INFORM YOUR NEXT OF KIN?"
-INPUT C$
-IF C$ = "YES" THEN
+INPUT C_STR
+IF C_STR = "YES" THEN
     PRINT "THAT WILL BE $4.50 FOR THE TELEGRAPH CHARGE."
     PRINT
 ELSE
@@ -687,19 +697,19 @@ END
 
 ' ***SHOOTING SUB-ROUTINE***
 ShootingRoutine:
-S$(1) = "BANG"
-S$(2) = "BLAM"
-S$(3) = "POW"
-S$(4) = "WHAM"
+S_STR(1) = "BANG"
+S_STR(2) = "BLAM"
+S_STR(3) = "POW"
+S_STR(4) = "WHAM"
 S6 = INT(RND * 4 + 1)
-PRINT "TYPE "; S$(S6)
+PRINT "TYPE "; S_STR(S6)
 B3 = TIMER
-INPUT C$
+INPUT C_STR
 B1 = TIMER
-B1 = ((B1 - B3) * 3600) - (D9 - 1)
+B1 = (B1 - B3) - (D9 - 1)
 PRINT
 IF B1 <= 0 THEN B1 = 0
-IF C$ <> S$(S6) THEN B1 = 9
+IF C_STR <> S_STR(S6) THEN B1 = 9
 RETURN
 
 ' ***FORT PURCHASE SUB-ROUTINE***
