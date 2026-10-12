@@ -10,37 +10,25 @@ The original Oregon Trail game unchanged since 1971. Shared in the May 1978 issu
 
 ## Build
 
-### FreeBASIC (Windows/Linux)
-
-```bash
-fbc freebasic/oregon.bas
-```
-
-Download FreeBASIC: https://github.com/freebasic/fbc
-
 ### QB64 (macOS/Windows/Linux)
 
 ```bash
-qb64pe -c qb64/oregon.bas
+qb64pe -x oregon.bas -o oregon
 ```
 
 Download QB64-PE: https://github.com/QB64-Phoenix-Edition/QB64pe
 
+Run `./oregon` on macOS/Linux, or `oregon.exe` on Windows. Compile a separate executable on each operating system.
+
+The root `oregon.bas` is converted directly from `original/oregon.bas`, retaining the original line numbers, branches, game rules, and display text. The numbered program uses QuickBASIC syntax; the initial `$CONSOLE:ONLY` and `_DEST _CONSOLE` statements select QB64's native terminal interface.
+
+The conversion splits CDC chained assignments, uses `^` for exponentiation, and declares the shooting-word array once. CDC's `RND(-1)` calls become successive QuickBASIC `RND` calls seeded at startup. Shooting uses `TIMER` in seconds instead of `CLK(0)` in hours, with midnight rollover handled. Embedded quotation marks use `CHR$(34)`, and terminal `SYSTEM` statements replace the mainframe's stops. Random outcomes will differ from the original CDC generator, while the probability formulas are retained.
+
 ### Original
 
-The original source code was written in BASIC 3.1 for a CDC Cyber 70 series mainframe.
+`original/oregon.bas` preserves the magazine transcription in CDC CYBER 70/73-26 BASIC 3.1. It is kept separately as a reference and is not the QB64 build source.
 
-Requirements:
-* DtCyber (Control Data 6000 Series Emulator)
-* NOS 1.x or NOS 2.x deadstart tape image
-
-https://github.com/kej715/DtCyber
-
-Alternatively, run on the Apple II emulator from MicroM8.
-Apple II original devices used Applesoft BASIC and cannot run the program.
-This emulator adds support for BASIC 3.1 libraries.
-
-https://paleotronic.com/software/microm8
+Magazine: https://archive.org/details/CreativeComputingbetterScan197805/page/n138/mode/1up
 
 <img width="700" src="https://github.com/user-attachments/assets/d261d8a9-ed77-4032-b3a8-3dc652ad1060" />
 
