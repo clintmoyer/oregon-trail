@@ -10,23 +10,36 @@ The original Oregon Trail game unchanged since 1971. Shared in the May 1978 issu
 
 ## Build
 
-### QB64 (macOS/Windows/Linux)
+Run these commands from the repository root.
+
+### Linux — FreeBASIC
+
+Install [FreeBASIC](https://www.freebasic.net/get) and make sure `fbc` is on your `PATH`.
+
+The source uses two QB64-only console directives. Remove them in a temporary copy, then compile in QuickBASIC compatibility mode:
+
+```bash
+build_dir=$(mktemp -d)
+sed '/^\$CONSOLE:ONLY$/d; /^_DEST _CONSOLE$/d' oregon.bas > "$build_dir/oregon.bas"
+fbc -lang qb "$build_dir/oregon.bas" -x oregon
+rm -r "$build_dir"
+./oregon
+```
+
+### macOS — QB64
+
+Install [QB64-PE](https://github.com/QB64-Phoenix-Edition/QB64pe/releases) and make sure `qb64pe` is on your `PATH`. Its setup requires the Xcode command line tools (`xcode-select --install`).
 
 ```bash
 qb64pe -x oregon.bas -o oregon
+./oregon
 ```
 
-Download QB64-PE: https://github.com/QB64-Phoenix-Edition/QB64pe
-
-Run `./oregon` on macOS/Linux, or `oregon.exe` on Windows. Compile a separate executable on each operating system.
-
-The root `oregon.bas` is converted directly from `original/oregon.bas`, retaining the original line numbers, branches, game rules, and display text. The numbered program uses QuickBASIC syntax; the initial `$CONSOLE:ONLY` and `_DEST _CONSOLE` statements select QB64's native terminal interface.
-
-The conversion splits CDC chained assignments, uses `^` for exponentiation, and declares the shooting-word array once. CDC's `RND(-1)` calls become successive QuickBASIC `RND` calls seeded at startup. Shooting uses `TIMER` in seconds instead of `CLK(0)` in hours, with midnight rollover handled. Embedded quotation marks use `CHR$(34)`, and terminal `SYSTEM` statements replace the mainframe's stops. Random outcomes will differ from the original CDC generator, while the probability formulas are retained.
+Both builds use the root `oregon.bas` conversion. Compile a separate executable for each operating system.
 
 ### Original
 
-`original/oregon.bas` preserves the magazine transcription in CDC CYBER 70/73-26 BASIC 3.1. It is kept separately as a reference and is not the QB64 build source.
+`original/oregon.bas` preserves the magazine transcription in CDC CYBER 70/73-26 BASIC 3.1. It is kept separately as a reference and is not the build source.
 
 Magazine: https://archive.org/details/CreativeComputingbetterScan197805/page/n138/mode/1up
 
